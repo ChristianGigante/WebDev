@@ -1,10 +1,7 @@
-var http = require('http');
-var url = require('url');
 var fs = require('fs');
 var port = 8000;
 
-
-http.createServer(function (req, res) {
+exports.addFile = (function (req, res) {
     var myData = "";
     req.on('data', function (data) {
 
@@ -17,9 +14,9 @@ http.createServer(function (req, res) {
             if (err) throw err;
             console.log('Saved!');
         });
-        // req.on('end', function (err) {
-            
-        // })
+        req.on('end', function () {
+            res.writeHead(200, { 'Content-Type': 'text/html', 'Access-Control-Allow-Origin': '*' });
+        });
     });
 
-}).listen(port);
+});

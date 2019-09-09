@@ -2,8 +2,7 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet"
-        href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css"
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css"
         integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.min.css">
     <meta charset="UTF-8">
@@ -104,22 +103,23 @@
                     }),
                     type: 'POST',
                     success: function (response) {
-                        //console.log(response);
-                        if (response == "1") {
-                            Swal.fire({
-                                type: 'success',
-                                title: 'Add Success!',
-                                showConfirmButton: false,
-                                timer: 800
-                            })
-                        } else {
-                            Swal.fire({
-                                type: 'error',
-                                title: 'Add Failed!',
-                                showConfirmButton: false,
-                                timer: 800
-                            })
-                        }
+                        console.log(response);
+                        Swal.fire({
+                            type: 'success',
+                            title: 'Add Success!',
+                            showConfirmButton: false,
+                            timer: 800
+                        })
+
+                    },
+                    error: function (err) {
+                        console.log(err);
+                        Swal.fire({
+                            type: 'error',
+                            title: 'Add Failed!',
+                            showConfirmButton: false,
+                            timer: 800
+                        })
                     }
                 })
             })
