@@ -23,13 +23,35 @@ http.createServer(function (req, res) {
   }
 
 
-  fs.readFile(filename, function (err, data) {
+  fs.readFile(filename, 'utf8', function (err, data) {
     if (err) {
       res.writeHead(404, { 'Content-Type': 'text/html' });
       return res.end("404 Not Found");
     }
-    res.writeHead(200, { 'Content-Type': 'text/html', 'Access-Control-Allow-Origin': '*' });
-    res.write(data);
+    if(filename.substring(filename.length,filename.length-4) == ".csv"){
+      var tr = '<tbody>';
+      var close = '</tbody></div</body></html>';
+      var table ='<!DOCTYPE html>' + 
+      '<html><head><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"></head><body><div class="container text-center table-responsive-md"><h1>'
+      + filename.substring(0,filename.length-4).toUpperCase() + 
+      ' CLASS</h1><table class="table table-light table-hover"></h1><thead class="thead-dark"><th>ID</th><th>NAME</th><th>EMAIL</th><th>COURSE & YEAR</th></thead>';
+      var info = data.split('\n').join(',');
+      var content = info.split(',');
+      var len = content.length - 1;
+      var counter = 0;
+      var id = 0;
+      for (var i = 0; i < len / 3; i++) {
+          tr += '<tr><td>' + id++ + '</td><td>' + content[counter] + '</td><td>' + content[counter + 1] + '</td><td>' + content[counter + 2] + '</td></tr>';
+          counter += 3;
+      }
+      table += tr + close;
+      res.writeHead(200, { 'Content-Type': 'text/html', 'Access-Control-Allow-Origin': '*' });
+      res.write(table);
+      res.end();
+    }else{
+      res.writeHead(200, { 'Content-Type': 'text/html', 'Access-Control-Allow-Origin': '*' });
+      res.write(data);
+    }
     return res.end();
   });
 
