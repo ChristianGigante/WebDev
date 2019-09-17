@@ -1,6 +1,6 @@
-var fs = require('fs');
 
-exports.addFile = (function (req, res) {
+module.exports = (function (req) {
+    var fs = require('fs');
     var myData = "";
     req.on('data', function (data) {
 
