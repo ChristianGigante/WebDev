@@ -1,0 +1,10 @@
+{
+    "name":"Cebu",
+    "images": ["https://primer.com.ph/feature/wp-content/uploads/sites/15/2017/05/top-photo.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/a/af/Cebu_montage.jpg",
+        "https://cdn11.bigcommerce.com/s-bv9wyhhu/images/stencil/1280x1280/products/193/153/manila-cebu-2go-phbus__96296.1563608249.jpg?c=2&imbypass=on"],
+    "group":"Visayas",
+    "population":100000,
+    "rating":[1,2,3,4,5],
+    "delicacies": ["bengka", "budbod", "toron"]
+}
