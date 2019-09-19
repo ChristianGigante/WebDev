@@ -1,10 +1,12 @@
 {
-    "name":"Cebu",
-    "images": ["https://primer.com.ph/feature/wp-content/uploads/sites/15/2017/05/top-photo.jpg",
-        "https://upload.wikimedia.org/wikipedia/commons/a/af/Cebu_montage.jpg",
-        "https://cdn11.bigcommerce.com/s-bv9wyhhu/images/stencil/1280x1280/products/193/153/manila-cebu-2go-phbus__96296.1563608249.jpg?c=2&imbypass=on"],
+    "shortname":"Cebu",
+    "name":"Province of Cebu",
+    "images":["/images/cebu1.jpg",
+        "/images/cebu2.jpg",
+        "/images/cebu3.jpg"],
     "group":"Visayas",
-    "population":100000,
+    "population":866171,
     "rating":[1,2,3,4,5],
-    "delicacies": ["bengka", "budbod", "toron"]
+    "delicacies": ["bengka", "budbod", "toron"],
+    "writeUp":"The Queen City of the South Cebu City is the capital city of the province of Cebu and is the second city of the Philippines. It serves as the center of a metropolitan area called Metro Cebu, which includes the cities of Carcar, Danao, Lapu-lapu, Mandaue, Naga, and Talisay."
 }

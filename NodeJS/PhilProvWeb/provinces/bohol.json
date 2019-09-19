@@ -1,0 +1,12 @@
+{
+    "shortname":"Bohol",
+    "name":"Province of Bohol",
+    "images":["/images/bohol1.jpg",
+        "/images/bohol2.jpg",
+        "/images/bohol3.jpg"],
+    "group":"Visayas",
+    "population":1230110,
+    "rating":[1,2,3,4,5],
+    "delicacies": ["bengka", "budbod", "toron"],
+    "writeUp":"Bohol History. Created by virtue of Act 2711 of March 10, 1917, this island province of Bohol is the tenth largest island in the Philippines. This oval-shaped island has an area of 4,117 sq. km. and is located in the central portion of the Visayas lying between Cebu to the northwest and Leyte to the northeast."
+}

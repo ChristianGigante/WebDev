@@ -1,20 +1,25 @@
 html  
     head
-        title=name
+        style
+            include style.css
+        title=shortname
     body
         center
             header
-                h1='Province of ' + name
+                h1=name
                 div
-                    img(src=images[0])
+                    img(src=images[0] style="width:100%;height:auto;")
                 div
-                    img(src=images[1])
-                    img(src=images[2])
+                    img(src=images[1] style="width:50%;height:auto;")
+                    img(src=images[2] style="width:49%;height:auto;")
+                div
+                    h1='Major Island '+group
+                    p='Population: '+population
             section
                 div
                     ul Delicacies
-                        li=delicacies[0]
-                        li=delicacies[1]
-                        li=delicacies[2]
-            footer
-                cool footer with lots of copyrights
+                        each val in delicacies
+                            li=val
+                p=writeUp
+            //footer
+                //cool footer with lots of copyrights
