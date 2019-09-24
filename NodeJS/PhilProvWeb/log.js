@@ -8,6 +8,6 @@ module.exports = function(req, res) {
             if (err) console.log(err);
             console.log("request Added!")
         })
-        res.end();
     })
 }
+

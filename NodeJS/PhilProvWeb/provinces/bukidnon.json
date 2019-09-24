@@ -1,0 +1,12 @@
+{
+    "shortname":"Bukidnon",
+    "name":"Province of Bukidnon",
+    "images":["/images/bukidnon1.jpg",
+        "/images/bukidnon2.jpg",
+        "/images/bukidnon3.jpg"],
+    "group":"Mindanao",
+    "population":1415226,
+    "rate":0,
+    "delicacies": ["bengka", "budbod", "toron"],
+    "writeUp":"Bukidnon is a landlocked province of the Philippines located in the Northern Mindanao region. Its capital is Malaybalay City. The province borders, clockwise starting from the north, Misamis Oriental, Agusan del Sur, Davao del Norte, Cotabato, Lanao del Sur, and Lanao del Norte. The province's total land area is 829,378 hectares (8, 293.78 square kilometers). It accounts for 59 percent (59%) of Northern Mindanao. Thirty-eight percent (38%) is alienable and disposable. The rest is classified as timberland. Bukidnon is considered by Filipinos to be the food basket of Mindanao. It is the major producer of rice and corn in the region. Plantations in the province also produce pineapples, bananas and sugarcane."
+}

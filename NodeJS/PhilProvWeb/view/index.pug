@@ -1,25 +1,35 @@
-html  
+html
     head
-        link(rel='stylesheet', href='/stylesheets/style.css')
-        link(rel='stylesheet', href='/css/bootstrap.min.css')
+        link(type="text/css", rel='stylesheet', href='/css/bootstrap.min.css')
         title=shortname
-    body=body
+    body.bg-success.text-white
         center
-            header
+            header.jumbotron.bg-dark
                 h1=name
-                div.container-fluid
-                    img(src=images[0] style="width:100%;height:auto;")
-                div
-                    img(src=images[1] style="width:50%;height:auto;")
-                    img(src=images[2] style="width:49%;height:auto;")
-                div
+            div.container-fluid.bg-primary
+                img(src=images[0] style='width:100%;height:300px;')
+            div.row
+                div.col-md-6
+                    img(src=images[1] style='width:100%;height:500px;border-radius: 50%;')
+                div.col-md-6
+                    img(src=images[2] style='width:100%;height:500px;border-radius: 50%;')
+                
+            div.container.row.bg-info
+                div.col-md-4
+                div.col-md-4
                     h1='Major Island '+group
-                    p='Population: '+population
-            section
-                div
+                    h5='Population: '+population
                     ul Delicacies
                         each val in delicacies
                             li=val
-                p=writeUp
-            //footer
-                //cool footer with lots of copyrights
+                div.col-md-4
+                h5=writeUp
+            footer
+                br
+                button 1
+                button 2
+                button 3
+                button 4
+                button 5
+                h5 Rate this Page
+            

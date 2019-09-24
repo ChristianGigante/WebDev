@@ -1,0 +1,12 @@
+{
+    "shortname":"Siquijor",
+    "name":"Province of Siquijor",
+    "images":["/images/siquijor1.jpeg",
+        "/images/siquijor2.jpg",
+        "/images/siquijor3.jpg"],
+    "group":"Visayas",
+    "population":95360,
+    "rate":0,
+    "delicacies": ["bengka", "budbod", "toron"],
+    "writeUp":"The Island of Siquijor is known to many as the mystical island of the Philippines. The name of the island has changed a few times though history though. The island’s native name used to be ´Katagusan´, from tugas, the molave trees that cover the hills. Because of the molave trees and the fireflies in them, the island was earlier poetically known to the spaniards as Isla del Fuego – The Island of Fire. Siquijor – The island’s present name, is claimed to be after King Kihod, a legendary ruler in power when the Spanish explorers arrived. When the Spaniards discovered the island they were alledgedly greeted by this King Kihod, who presented himself with these words ‘si Kihod’ (I am Kihod) The spaniards mistakingly thinking that he was talking about the island adopted the name Sikihod which later changed to Siquijor, as it was easier to pronounce. A more down to earth explanation of the name, is that it comes from the native term quidjod which means the tide is going out."
+}
