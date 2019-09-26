@@ -5,6 +5,7 @@ $(document).ready(function () {
         $.ajax({
             url: "/rate",
             data: { rate: rate, city: city },
+            type: "GET",
             success: function (data) {
                 $('#rating').text('Average Rate ' + data)
             },
@@ -13,6 +14,4 @@ $(document).ready(function () {
             }
         })
     });
-
-
 });

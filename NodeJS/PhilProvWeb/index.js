@@ -9,7 +9,7 @@ app.set('view engine', 'pug');
 app.set('views', 'view');
 
 //countPageVisit
-app.use(function(req, res, next) {
+app.use(function (req, res, next) {
     //console.log('Middleware Called', req.originalUrl)
     pageVisit(req, res, req.originalUrl);
     next();
@@ -19,17 +19,17 @@ app.use(function(req, res, next) {
 app.use(express.static(path.resolve('./public')));
 
 //ratePage
-app.get('/rate', function (req,res) {
-    ratePage(req,res);    
+app.get('/rate', function (req, res) {
+    ratePage(req, res);
 })
 
 //province
 app.get('/province/:id', function (req, res) {
-    provinceProvider(req,res);
+    provinceProvider(req, res);
 })
 
 //notFoundPage
-app.get('*', function(req, res) {
+app.get('*', function (req, res) {
     res.writeHead(404, { "Content-Type": "text/html" });
     res.end("<img src='http://kalashreeheritage.com/wp-content/uploads/2018/08/maxresdefault.jpg' style='height:auto;width:100%'>");
 })

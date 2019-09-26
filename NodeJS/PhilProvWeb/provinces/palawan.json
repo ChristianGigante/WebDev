@@ -1,12 +1,1 @@
-{
-    "shortname":"Palawan",
-    "name":"Province of Palawan",
-    "images":["/images/palawan1.jpg",
-        "/images/palawan2.jpg",
-        "/images/palawan3.jpeg"],
-    "group":"Luzon",
-    "population":161912,
-    "rate":0,
-    "delicacies": ["bengka", "budbod", "toron"],
-    "writeUp":"Palawan’s textured history can be traced back over millions of years. Bone fragments, the skull cap remains and tools of the Tabon Man – one of the oldest remnants of human inhabitants found in the Philippines at 22,000 years old – were discovered in the Tabon Caves in Quezon, Palawan in 1962. It is believed that these cave dwellers came from Borneo. Further exploration of the caves revealed burial jars, jade ornaments, animal bones and human fossils indicating habitation as far back as 47,000 years ago. Geological studies have also revealed limestone formations on the islands date back 25 million years."
-}
+{"shortname":"Palawan","name":"Province of Palawan","images":["/images/palawan1.jpg","/images/palawan2.jpg","/images/palawan3.jpeg"],"group":"Luzon","population":161912,"rate":5,"delicacies":["bengka","budbod","toron"],"writeUp":"Palawan’s textured history can be traced back over millions of years. Bone fragments, the skull cap remains and tools of the Tabon Man – one of the oldest remnants of human inhabitants found in the Philippines at 22,000 years old – were discovered in the Tabon Caves in Quezon, Palawan in 1962. It is believed that these cave dwellers came from Borneo. Further exploration of the caves revealed burial jars, jade ornaments, animal bones and human fossils indicating habitation as far back as 47,000 years ago. Geological studies have also revealed limestone formations on the islands date back 25 million years."}
