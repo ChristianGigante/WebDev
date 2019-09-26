@@ -1,12 +1,1 @@
-{
-    "shortname":"Cebu",
-    "name":"Province of Cebu",
-    "images":["/images/cebu1.jpg",
-        "/images/cebu2.jpg",
-        "/images/cebu3.jpg"],
-    "group":"Visayas",
-    "population":866171,
-    "rate":0,
-    "delicacies": ["bengka", "budbod", "toron"],
-    "writeUp":"The Queen City of the South Cebu City is the capital city of the province of Cebu and is the second city of the Philippines. It serves as the center of a metropolitan area called Metro Cebu, which includes the cities of Carcar, Danao, Lapu-lapu, Mandaue, Naga, and Talisay."
-}
+{"shortname":"Cebu","name":"Province of Cebu","images":["/images/cebu1.jpg","/images/cebu2.jpg","/images/cebu3.jpg"],"group":"Visayas","population":866171,"rate":3.9,"delicacies":["bengka","budbod","toron"],"writeUp":"The Queen City of the South Cebu City is the capital city of the province of Cebu and is the second city of the Philippines. It serves as the center of a metropolitan area called Metro Cebu, which includes the cities of Carcar, Danao, Lapu-lapu, Mandaue, Naga, and Talisay."}

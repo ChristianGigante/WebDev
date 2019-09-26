@@ -1,13 +1,35 @@
-module.exports = function(req, res) {
+module.exports = function (req, res, originalUrl) {
     const fs = require('fs');
-    fs.readFile('request.txt', function(err, data) {
+
+    fs.appendFile('req.txt', originalUrl + '\n', function (err) {
         if (err) console.log(err);
-        data = data * 1;
-        data++;
-        fs.writeFile('request.txt', data, function(err) {
-            if (err) console.log(err);
-            console.log("request Added!")
-        })
+        // console.log(originalUrl)
     })
+
+    var num;
+
+    fs.readFile('req.txt', function (err, data) {
+        if (err) console.log(err);
+        var array = data.toString().split("\n");
+        //console.log(array.length)
+        num = array.length;
+        fs.writeFile('request.txt', num, function (err) {
+            if (err) console.log(err);
+            console.log("request Added!" + num)
+        })
+        
+    })
+
+    // fs.readFile('request.txt', function (err, data) {
+    //     if (err) console.log(err);
+    //     data = Number(data);
+    //     nData = data + num;
+    //     fs.writeFile('request.txt', nData, function (err) {
+    //         if (err) console.log(err);
+    //         //console.log("request Added!" + data)
+    //     })
+    // })
+
+
 }
 

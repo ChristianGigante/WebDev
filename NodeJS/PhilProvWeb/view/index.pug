@@ -1,29 +1,32 @@
 html
     head
         link(type="text/css", rel='stylesheet', href='/css/bootstrap.min.css')
+        style
+            include style.css
         title=shortname
     body.bg-success.text-white
         center
-            header.jumbotron.bg-dark
+            header.bg-success
                 h1=name
-            div.container-fluid.bg-primary
-                img(src=images[0] style='width:100%;height:300px;')
+            div.container-fluid
+                img(src=images[0])#mainPic
+            br
             div.row
                 div.col-md-6
-                    img(src=images[1] style='width:100%;height:500px;border-radius: 50%;')
+                    img(src=images[1])#subPic
                 div.col-md-6
-                    img(src=images[2] style='width:100%;height:500px;border-radius: 50%;')
-                
-            div.container.row.bg-info
+                    img(src=images[2])#subPic
+            h1='Major Island '+group         
+            div.container.row
                 div.col-md-4
                 div.col-md-4
-                    h1='Major Island '+group
                     h5='Population: '+population
-                    ul Delicacies
-                        each val in delicacies
-                            li=val
+                    h5 Delicacies
+                    each val in delicacies
+                        li=val
                 div.col-md-4
-                h5=writeUp
+                h5.bg-info#text=writeUp
+            h2#rating='Average Rate '+rate
             footer
                 br
                 button 1
@@ -32,4 +35,6 @@ html
                 button 4
                 button 5
                 h5 Rate this Page
+    script(src="/jquery.js")
+    script(src="/Ajax.js")
             

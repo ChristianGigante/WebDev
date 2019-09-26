@@ -3,6 +3,7 @@ const express = require('express');
 const app = express();
 const pageVisit = require('./log.js');
 const provinceProvider = require('./province.js');
+const ratePage = require('./ratePage.js');
 const path = require('path');
 app.set('view engine', 'pug');
 app.set('views', 'view');
@@ -10,17 +11,23 @@ app.set('views', 'view');
 //countPageVisit
 app.use(function(req, res, next) {
     //console.log('Middleware Called', req.originalUrl)
-    pageVisit(req, res);
+    pageVisit(req, res, req.originalUrl);
     next();
 })
 
 //usePublicFolder
-app.use(express.static(path.resolve('./public')))
+app.use(express.static(path.resolve('./public')));
+
+//ratePage
+app.get('/rate', function (req,res) {
+    ratePage(req,res);    
+})
 
 //province
 app.get('/province/:id', function (req, res) {
     provinceProvider(req,res);
 })
+
 //notFoundPage
 app.get('*', function(req, res) {
     res.writeHead(404, { "Content-Type": "text/html" });
